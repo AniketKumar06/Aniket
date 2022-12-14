@@ -1,0 +1,119 @@
+#about {
+  padding: 4em 0 0 0;
+  margin: 25px 0 25px 0;
+  /* background-color: var(--container-color); */
+  row-gap: 11rem;
+}
+
+.about__container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.about__name {
+  font: size 10px;
+}
+
+/* #about .section__title {
+  margin-bottom: 5rem;
+} */
+.arrow {
+  margin-left: 4px;
+  font-size: 1.2rem;
+}
+.about__img {
+  width: 200px;
+  border-radius: 1.5rem;
+
+  justify-self: center;
+  border: 2px solid black;
+  transform: scale(2, 2);
+  box-shadow: 2px 3px 4px #d2d2d2;
+}
+.about__info {
+  grid-template-columns: repeat(3, 140px);
+  gap: 0.5rem;
+  margin-bottom: var(--mb-2);
+}
+
+.about__box {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 1rem 1.25rem;
+}
+
+.about__icon {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin-bottom: var(--mb-0-5);
+}
+
+.about__title {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.about__subtitle {
+  font-size: var(--tiny-font-size);
+}
+.about__description {
+  padding: 0 4rem 0 0;
+  margin-bottom: var(--mb-1);
+  margin-top: var(--mb-1);
+}
+.firstLetter {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold);
+}
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+  .about__img {
+    width: 120px;
+    margin-top: var(--mb-1-5);
+    margin-bottom: var(--mb-1-5);
+  }
+  .about__box {
+    padding: 0.75rem 0.5rem;
+  }
+  .about__data {
+    text-align: center;
+  }
+  .about__info {
+    justify-content: center;
+  }
+  .about__description {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #about {
+    text-align: center;
+  }
+  .about__info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about__description {
+    padding: 0;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  #about {
+    text-align: center;
+  }
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
