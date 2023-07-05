@@ -1,0 +1,31 @@
+{
+  "name": "portfolibackend",
+  "version": "1.0.0",
+  "description": "\"Portfolio Backend\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AniketKumar06/Aniket.git"
+  },
+  "keywords": [
+    "AniketPortfolio",
+    "Portfolio"
+  ],
+  "author": "Aniket Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AniketKumar06/Aniket/issues"
+  },
+  "homepage": "https://github.com/AniketKumar06/Aniket#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22"
+  }
+}
